@@ -1,14 +1,9 @@
-/* .section-title {
-	margin-bottom: 50px;
-	font-weight: bold;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-	letter-spacing: 0.03em;
-}
-
 .activity-section {
 	padding-top: 0;
+
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
 }
 
 .item-activity {
@@ -44,4 +39,3 @@
 	text-transform: uppercase;
 	color: var(--second-color-heder-text-title-bc);
 }
- */
