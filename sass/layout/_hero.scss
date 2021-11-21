@@ -1,4 +1,4 @@
-.section-hero {
+/*.section-hero {
 	text-align: center;
 	background-color: var(--four-color);
 	background-size: cover;
@@ -17,7 +17,6 @@
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
-	/* or 136% */
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--second-color-heder-text-title-bc);
@@ -35,7 +34,6 @@
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
-	/* identical to box height, or 187% */
 	color: var(--second-color-heder-text-title-bc);
 	background-color: var(--accent);
 	cursor: pointer;

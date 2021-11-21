@@ -1,4 +1,4 @@
-.check {
+/*.check {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -7,7 +7,6 @@
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.71;
-	/* identical to box height, or 171% */
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 }
@@ -17,7 +16,6 @@
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.71;
-	/* identical to box height, or 171% */
 	letter-spacing: 0.03em;
 	color: var(--accent);
 }
@@ -66,7 +64,6 @@
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 1.86;
-	/* identical to box height, or 187% */
 	letter-spacing: 0.06em;
 	color: var(--second-color-heder-text-title-bc);
 	transition-property: background-color, box-shadow;

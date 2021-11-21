@@ -1,4 +1,4 @@
-.team-seaction {
+/*.team-seaction {
 	background-color: var(--five-color);
 }
 .item-team {
@@ -10,9 +10,7 @@
 	flex-basis: calc(100% / 4 - 30px);
 	margin-left: 30px;
 	background: var(--second-color-heder-text-title-bc);
-	/* material shadow v1 */
-
-	box-shadow: 0px 1px 3px var(--eleven-rgba), 0px 1px 1px var(--twelve-rgba), 0px 2px 1px var(--one-rgba);
+    box-shadow: 0px 1px 3px var(--eleven-rgba), 0px 1px 1px var(--twelve-rgba), 0px 2px 1px var(--one-rgba);
 	border-radius: 0px 0px 4px 4px;
 }
 .staff {
@@ -27,7 +25,6 @@
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
-	/* identical to box height */
 	text-align: center;
 	color: var(--first-color-heder-text-title);
 }
@@ -36,7 +33,6 @@
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
-	/* identical to box height */
 	text-align: center;
 	color: var(--third-color-text);
 	margin-bottom: 16px;

@@ -1,4 +1,4 @@
-.item-projects {
+/*.item-projects {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -30px;
@@ -50,7 +50,6 @@
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 1.55;
-	/* or 156% */
 	letter-spacing: 0.03em;
 	color: var(--second-color-heder-text-title-bc);
 }
@@ -60,7 +59,6 @@
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 2;
-	/* identical to box height, or 200% */
 	letter-spacing: 0.06em;
 	color: var(--first-color-heder-text-title);
 }
@@ -75,6 +73,5 @@
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.03em;
-	/* identical to box height, or 187% */
 	color: var(--third-color-text);
 }

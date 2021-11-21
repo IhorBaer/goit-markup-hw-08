@@ -20,24 +20,28 @@
 </head>
 
 <body>
+
     <!--modal-->
+
         <div class="backdrop is-hidden" data-modal>
 
             <div class="modal">
 
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
-                <button class="button-close" type="button" data-modal-close><svg class="close" width="11" height="11">
+                <button class="button-close" type="button" data-modal-close>
+                    <svg class="close" width="11" height="11">
                         <use href="./images/sprite.svg#icon-close"></use>
-                    </svg></button>
+                    </svg>
+                </button>
 
                 <form class="hiro-form">
 
                     <label class="hiro-form-text">
                         Имя
                         <span class="modal-form-block">
-                            <input class="hiro-form-input" name="user-name" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+"
-              title="Имя должно содержать символы кириллицы или латиницы" type="text" placeholder="Игорь" required>
+                            <input class="hiro-form-input" name="user-name" minlength="2" 
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы или латиницы" type="text" placeholder="Игорь" required>
                             <svg class="modal-form-icon" width="18" height="18">
                                 <use href="./images/sprite.svg#icon-person-black-icon"></use>
                             </svg>
@@ -58,7 +62,7 @@
                         Тел
                         <span class="modal-form-block">
                             <input class="hiro-form-input" type="tel" name="user-tel" placeholder="+380-00-000-00-00"
-              pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$" title="Номер должен содержать пробелы" required>
+                            pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$" title="Номер должен содержать пробелы" required>
                             <svg class="modal-form-icon" width="18" height="18">
                                 <use href="./images/sprite.svg#icon-phone-black-icon"></use>
                             </svg>
