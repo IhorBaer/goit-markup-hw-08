@@ -431,14 +431,16 @@ img {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1200px) {
+  .customers-items {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .customers-item {
-  display: flex;
   width: calc(100% / 2 - 30px);
   margin: 15px;
-  /*margin-right: 30px; */
-  /*&:last-child {
-		 margin-right: 0; 
-	}*/
 }
 
 @media screen and (min-width: 768px) {
