@@ -1,0 +1,106 @@
+.modal-title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 0.86;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--first-color-heder-text-title);
+	margin-bottom: 12px;
+}
+
+.hiro-form {
+	width: 448px;
+	min-height: 200px;
+	margin: 0 auto;
+}
+
+.hiro-form-text {
+	display: block;
+	margin-bottom: 10px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 1.16;
+	/* identical to box height */
+	letter-spacing: 0.01em;
+	color: var(--third-color-text);
+}
+
+.hiro-form-input {
+	outline: none;
+	margin-top: 4px;
+	width: 100%;
+	min-height: 40px;
+	padding-left: 42px;
+	border: 1px solid var(--sixteen-rgba);
+	box-sizing: border-box;
+	border-radius: 4px;
+	cursor: pointer;
+	transition-property: border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-color: var(--hover-color);
+	}
+
+	&:hover + .modal-form-icon,
+	&:focus + .modal-form-icon {
+		fill: var(--hover-color);
+	}
+}
+
+.hiro-comment-text {
+	display: block;
+	margin-bottom: 20px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 1.16;
+	/* identical to box height */
+	letter-spacing: 0.01em;
+	color: var(--third-color-text);
+}
+
+.hiro-comment-input {
+	outline: none;
+	margin-top: 4px;
+	width: 100%;
+	min-height: 120px;
+	padding: 12px 16px;
+	resize: none;
+	border: 1px solid var(--sixteen-rgba);
+	box-sizing: border-box;
+	border-radius: 4px;
+	transition-property: border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus,
+	&:hover {
+		border-color: var(--hover-color);
+	}
+}
+
+.modal-form-block {
+	position: relative;
+	display: block;
+	color: var(--third-color-text);
+}
+
+.modal-form-icon {
+	display: block;
+	position: absolute;
+	top: 14px;
+	left: 12px;
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		fill: var(--hover-color);
+	}
+}

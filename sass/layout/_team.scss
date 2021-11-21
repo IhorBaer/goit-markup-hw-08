@@ -1,0 +1,43 @@
+.team-seaction {
+	background-color: var(--five-color);
+}
+.item-team {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -30px;
+}
+.team-card {
+	flex-basis: calc(100% / 4 - 30px);
+	margin-left: 30px;
+	background: var(--second-color-heder-text-title-bc);
+	/* material shadow v1 */
+
+	box-shadow: 0px 1px 3px var(--eleven-rgba), 0px 1px 1px var(--twelve-rgba), 0px 2px 1px var(--one-rgba);
+	border-radius: 0px 0px 4px 4px;
+}
+.staff {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: var(--se);
+	border-radius: 0px 0px 4px 4px;
+}
+.team-title {
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.18;
+	letter-spacing: 0.03em;
+	/* identical to box height */
+	text-align: center;
+	color: var(--first-color-heder-text-title);
+}
+
+.team-text {
+	font-size: 16px;
+	line-height: 1.18;
+	letter-spacing: 0.03em;
+	/* identical to box height */
+	text-align: center;
+	color: var(--third-color-text);
+	margin-bottom: 16px;
+}
