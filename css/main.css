@@ -322,7 +322,7 @@ img {
   padding-top: 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .activity-section {
     display: none;
   }
