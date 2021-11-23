@@ -10,11 +10,15 @@
 	padding-bottom: 60px;
 
 	@media screen and (min-width: 768px) {
-		padding: 60px 89px 60px 76px;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		flex-direction: row;
 	}
-	/* 
-	align-items: baseline;
-	justify-content: space-between; */
+
+	@media screen and (min-width: 1200px) {
+		align-items: baseline;
+		justify-content: space-between;
+	}
 }
 
 .footer-logo {
@@ -22,15 +26,20 @@
 	margin-bottom: 20px;
 	text-align: center;
 	color: var(--second-color-heder-text-title-bc);
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
 }
 
 .address {
-	/* display: flex; */
 	font-style: normal;
 	text-align: center;
 	margin-bottom: 60px;
-	/* width: 231px;
-	height: 81px; */
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
 }
 
 .adress-list:not(:last-child) {
@@ -63,8 +72,6 @@
 
 .join {
 	display: block;
-	/* width: 145px;
-	height: 16px; */
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -74,6 +81,10 @@
 	text-align: center;
 	margin-bottom: 20px;
 	color: var(--second-color-heder-text-title-bc);
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
 }
 
 .footer-social-list {
@@ -115,17 +126,28 @@
 	}
 }
 
-.footer-form-block {
+.footer-form-text {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 0.87;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--second-color-heder-text-title-bc);
+	margin-bottom: 20px;
+
+	@media screen and (min-width: 1200px) {
+		text-align: left;
+	}
 }
 
 .footer-form {
-	/* display: flex;
-	align-items: center; */
-}
-
-.form-label {
-	/* display: flex; */
-	/* width: 358px; */
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
 }
 
 .form-input {
@@ -147,13 +169,20 @@
 	&:hover {
 		border-color: var(--hover-color);
 	}
+
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+	}
 }
 
 .footer-submit {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	/* margin-left: 12px; */
 	padding: 10px 28px;
 	margin: 20px auto 0;
 	cursor: pointer;
@@ -175,18 +204,10 @@
 	&:focus {
 		background: var(--hover-color);
 	}
-}
 
-.footer-form-text {
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 0.87;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	text-align: center;
-	color: var(--second-color-heder-text-title-bc);
-	margin-bottom: 20px;
+	@media screen and (min-width: 1200px) {
+		margin: 0 0 0 12px;
+	}
 }
 
 .footer-send-icon {
