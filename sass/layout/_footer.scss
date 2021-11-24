@@ -1,13 +1,13 @@
 .footer {
 	width: 100%;
 	background-color: var(--four-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .footer-container {
 	display: flex;
 	flex-direction: column;
-	padding-top: 60px;
-	padding-bottom: 60px;
 
 	@media screen and (min-width: 768px) {
 		flex-wrap: wrap;

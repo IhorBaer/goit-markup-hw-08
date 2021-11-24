@@ -39,26 +39,18 @@
 	@media screen and (min-width: 768px) {
 		display: flex;
 		flex-wrap: wrap;
-
-		@media screen and (min-width: 768px) {
-			margin: -15px;
-		}
+		margin: -15px;
 	}
 }
+
 .list-benefits {
 	@media screen and (min-width: 768px) {
-		flex-basis: calc(100% / 2 - 30px);
+		flex-basis: calc ((100% - 4 * 15px) / 2);
 		margin: 15px;
 	}
 
 	@media screen and (min-width: 1200px) {
-		flex-basis: calc(100% / 4 - 30px);
+		flex-basis: calc((100% - 8 * 15px) / 4);
 		margin: 15px;
-	}
-
-	&:not(:last-child) {
-		@media screen and (max-width: 767px) {
-			margin-bottom: 30px;
-		}
 	}
 }
