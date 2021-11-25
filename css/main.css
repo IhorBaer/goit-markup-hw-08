@@ -1112,7 +1112,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .item-menu-filters {
-    margin-top: 60px;
     margin-bottom: 25px;
   }
 }
@@ -1120,14 +1119,12 @@ img {
 @media screen and (min-width: 768px) {
   .item-menu-filters {
     justify-content: center;
-    margin-top: 60px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .item-menu-filters {
-    margin-top: 94px;
     margin-bottom: 50px;
   }
 }
