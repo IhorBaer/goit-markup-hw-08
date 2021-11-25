@@ -1,17 +1,19 @@
-/* .modal-title {
+.modal-title {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 20px;
-	line-height: 0.86;
+	line-height: 1.15;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--first-color-heder-text-title);
 	margin-bottom: 12px;
+
+	@media screen and (min-width: 1200px) {
+		line-height: 1.15;
+	}
 }
 
 .hiro-form {
-	width: 448px;
-	min-height: 200px;
 	margin: 0 auto;
 }
 
@@ -102,4 +104,3 @@
 		fill: var(--hover-color);
 	}
 }
- */

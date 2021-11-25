@@ -1,12 +1,11 @@
-/* .backdrop {
+.backdrop {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	right: 0;
 	left: 0;
 	top: 0;
 	background: var(--one-rgba);
-	z-index: 9999;
+	z-index: 999;
 	opacity: 1;
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -23,4 +22,3 @@
 		opacity: 0;
 	}
 }
- */

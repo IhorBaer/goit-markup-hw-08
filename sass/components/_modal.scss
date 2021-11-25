@@ -1,8 +1,7 @@
-/* .modal {
-	padding: 40px 39px 40px 41px;
+.modal {
+	padding: 40px;
 	position: absolute;
-	min-width: 528px;
-	min-height: 581px;
+	width: calc(100% - 30px);
 	left: 50%;
 	top: 50%;
 	background: var(--second-color-heder-text-title-bc);
@@ -11,6 +10,14 @@
 	transform: translate(-50%, -50%) scale(1);
 	opacity: 1;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 528px;
+	}
 }
 
 .button-close {
@@ -40,4 +47,3 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
- */
