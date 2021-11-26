@@ -10,7 +10,7 @@
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
 
-	@media screen and (max-width: 479px) {
+	@media screen and (max-width: 480px) {
 		flex-wrap: wrap;
 		justify-content: flex-start;
 	}
@@ -24,10 +24,15 @@
 .check-box-linc {
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 0.85;
 	letter-spacing: 0.03em;
 	color: var(--accent);
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 .check-box {
