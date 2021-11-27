@@ -1,6 +1,6 @@
 .header {
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-bottom: 1px solid var(--border-header-color);
 	width: 100vw;
 	background-color: var(--second-color-heder-text-title-bc);
@@ -10,8 +10,8 @@
 	z-index: 2;
 
 	@media screen and (min-width: 768px) {
-		padding-top: 26px;
-		padding-bottom: 26px;
+		padding-top: 21px;
+		padding-bottom: 21px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -63,7 +63,7 @@
 	visibility: hidden;
 	pointer-events: none;
 
-	transition: opacity var(--time) var(--cubic), visibility var(--time) var(--cubic);
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&.is-open {
 		opacity: 1;
 		visibility: visible;
@@ -87,7 +87,7 @@
 	line-height: 0;
 	border: none;
 	color: var(--first-color-heder-text-title);
-	transition: color var() var(--cubic);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover {
 		color: var(--accent);
@@ -114,6 +114,11 @@
 }
 .menu-social {
 	display: flex;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	letter-spacing: 0.02em;
 
 	@media screen and (max-width: 479px) {
 		flex-wrap: wrap;
@@ -122,7 +127,7 @@
 
 .menu-social-item {
 	&:not(:last-child) {
-		border-right: 1px solid rgba(33, 33, 33, 0.2);
+		border-right: 1px solid var(--sixteen-rgba);
 	}
 
 	&:not(:last-child) {
@@ -160,11 +165,6 @@
 	justify-content: space-between;
 }
 
-/* .nav {
-	display: flex;
-	align-items: center;
-} */
-
 .header__logo {
 	@media screen and (min-width: 768px) {
 		margin-right: 88px;
@@ -172,16 +172,6 @@
 
 	@media screen and (min-width: 1200px) {
 		margin-right: 93px;
-	}
-}
-
-.menu {
-	@media screen and (max-width: 767px) {
-		font-weight: 500;
-		line-height: 1.14;
-		letter-spacing: 0.02em;
-		font-size: 40px;
-		line-height: 1.17;
 	}
 }
 
@@ -201,13 +191,13 @@
 	font-size: 24px;
 	line-height: 1.16;
 	letter-spacing: 0.02em;
-	color: var(--first-color-heder-text-title);
+	color: var(--third-color-text);
 
 	@media screen and (max-width: 479px) {
 		font-size: 8vw;
 	}
 
-	transition: color var(--time) var(--cubic);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover {
 		color: var(--accent);
@@ -278,9 +268,14 @@
 .nav__menu-link {
 	color: var(--first-color-heder-text-title);
 	position: relative;
-	transition: color var(--time) var(--cubic);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	padding-bottom: 32px;
 	padding-top: 32px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 0.85;
+	letter-spacing: 0.02em;
 
 	&:hover {
 		color: var(--accent);
@@ -289,10 +284,6 @@
 	&:focus {
 		color: var(--accent);
 	}
-}
-
-.nav__menu-link {
-	color: var(--accent);
 }
 
 .menu-list {
@@ -321,18 +312,22 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 1199px) {
+	@media screen and (min-width: 768px) {
 		flex-wrap: wrap;
+		flex-direction: column;
+		margin-left: auto;
 	}
 
 	@media screen and (min-width: 1200px) {
-		margin-left: auto;
+		flex-direction: row;
 	}
 }
 
 .auto__item {
-	&:not(:last-child) {
-		margin-right: 50px;
+	@media screen and (min-width: 1200px) {
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
 	}
 }
 
@@ -346,19 +341,12 @@
 	align-items: center;
 }
 
-.header__logo {
-	margin-right: 93px;
-}
-
-.menu {
-	font-weight: 500;
-	/* font-size: 14px;
-	line-height: 1.14; */
-	letter-spacing: 0.02em;
-	color: var(--third-color-text);
-}
-
 .menu__link {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 0.87;
+	letter-spacing: 0.02em;
 	display: flex;
 	position: relative;
 	color: var(--first-color-heder-text-title);
@@ -369,11 +357,18 @@
 	&.current::after {
 		content: "";
 		position: absolute;
-		top: 46px;
 		width: 100%;
 		height: 4px;
 		border-radius: 2px;
 		background: var(--accent);
+
+		@media screen and (min-width: 768px) {
+			top: 39px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			top: 44px;
+		}
 	}
 
 	&:hover,
@@ -388,12 +383,22 @@
 
 .header__mail,
 .header__tel {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.02em;
 	color: var(--third-color-text);
 	display: flex;
 	align-items: center;
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 0.87;
+	}
 
 	&:hover,
 	&:focus {

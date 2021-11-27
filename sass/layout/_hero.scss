@@ -11,6 +11,17 @@
 	@media screen and (min-width: 1200px) {
 		padding-bottom: 200px;
 		padding-top: 200px;
+	}
+
+	@media screen and (max-width: 767px) {
+		margin-top: 61px;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-top: 73px;
+	}
+
+	@media screen and (min-width: 1200px) {
 		margin: 80px auto;
 	}
 }
@@ -24,7 +35,6 @@
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	margin: 0 auto 30px;
-	width: 360px;
 	color: var(--second-color-heder-text-title-bc);
 
 	@media screen and (min-width: 1200px) {
